@@ -11,7 +11,7 @@ df = load_data()
 
 st.title("📊 Visão Geral dos Dados de Carros")
 
-# ---------------- SIDEBAR: FILTROS ----------------
+#FILTROS
 st.sidebar.header("Filtros - Visão Geral")
 
 marcas_disponiveis = sorted(df["Make"].dropna().unique().tolist())
@@ -42,7 +42,7 @@ df_filtrado = df_filtrado[
 
 st.write(f"Dados filtrados: **{df_filtrado.shape[0]}** registros.")
 
-# ---------------- MÉTRICAS EM COLUNAS ----------------
+#MÉTRICAS
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -54,7 +54,7 @@ with col3:
 
 st.markdown("---")
 
-# ---------------- GRÁFICO 1: PREÇO MÉDIO POR MARCA ----------------
+#GRÁFICO 1
 st.subheader("Preço médio por marca (Top 10)")
 
 preco_medio_marca = (
@@ -75,7 +75,7 @@ fig_bar = px.bar(
 fig_bar.update_layout(xaxis_tickangle=-45)
 st.plotly_chart(fig_bar, use_container_width=True)
 
-# ---------------- GRÁFICO 2: HISTOGRAMA DE PREÇOS ----------------
+#GRÁFICO 2
 st.subheader("Distribuição de preços (MSRP)")
 
 fig_hist = px.histogram(

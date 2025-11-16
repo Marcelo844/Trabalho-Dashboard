@@ -11,7 +11,7 @@ df = load_data()
 
 st.title("⚙️ Consumo e Performance")
 
-# ---------------- SIDEBAR: FILTROS ----------------
+#FILTROS
 st.sidebar.header("Filtros - Consumo & Performance")
 
 tamanhos = sorted(df["Vehicle Size"].dropna().unique().tolist())
@@ -38,10 +38,10 @@ if tracao_sel:
 
 st.write(f"Dados filtrados: **{df_filtrado.shape[0]}** registros.")
 
-# ---------------- LAYOUT EM COLUNAS ----------------
+#LAYOUT EM COLUNAS
 col1, col2 = st.columns(2)
 
-# ---------------- GRÁFICO 5: city mpg x highway MPG ----------------
+#GRÁFICO 5
 with col1:
     st.subheader("Consumo: cidade x estrada")
 
@@ -60,7 +60,7 @@ with col1:
     fig_consumo.update_traces(opacity=0.7)
     st.plotly_chart(fig_consumo, use_container_width=True)
 
-# ---------------- GRÁFICO 6: Popularidade média por tamanho ----------------
+#GRÁFICO 6
 with col2:
     st.subheader("Popularidade média por tamanho do veículo")
 

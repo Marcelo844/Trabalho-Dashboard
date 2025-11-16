@@ -11,7 +11,7 @@ df = load_data()
 
 st.title("💰 Análise de Preços")
 
-# ---------------- SIDEBAR: FILTROS ----------------
+#FILTROS
 st.sidebar.header("Filtros - Análise de Preços")
 
 marcas_disponiveis = sorted(df["Make"].dropna().unique().tolist())
@@ -52,10 +52,10 @@ if transmissao_sel:
 
 st.write(f"Dados filtrados: **{df_filtrado.shape[0]}** registros.")
 
-# ---------------- LAYOUT EM TABS ----------------
+#LAYOUT EM TABS
 tab1, tab2 = st.tabs(["Scatter de Preços", "Boxplot por Marca"])
 
-# ---------------- GRÁFICO 3: SCATTER PREÇO x ANO / POTÊNCIA ----------------
+#GRÁFICO 3
 with tab1:
     st.subheader("Preço em função do ano ou da potência (HP)")
 
@@ -78,7 +78,7 @@ with tab1:
     fig_scatter.update_traces(opacity=0.7)
     st.plotly_chart(fig_scatter, use_container_width=True)
 
-# ---------------- GRÁFICO 4: BOXPLOT PREÇO POR MARCA ----------------
+#GRÁFICO 4
 with tab2:
     st.subheader("Distribuição de preço por marca (Boxplot)")
 
