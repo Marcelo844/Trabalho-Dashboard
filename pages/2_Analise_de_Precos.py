@@ -9,7 +9,7 @@ def load_data():
 
 df = load_data()
 
-st.title("💰 Análise de Preços")
+st.title(" Análise de Preços")
 
 #FILTROS
 st.sidebar.header("Filtros - Análise de Preços")

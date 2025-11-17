@@ -3,7 +3,6 @@ import pandas as pd
 
 st.set_page_config(
     page_title="Dashboard de Carros",
-    page_icon="🚗",
     layout="wide"
 )
 
@@ -15,10 +14,10 @@ def load_data():
 
 df = load_data()
 
-st.title("🚗 Dashboard de Carros")
+st.title(" Dashboard de Carros")
 
 st.markdown("""
-### 🎯 Objetivo do Dashboard
+###  Objetivo do Dashboard
 
 Este dashboard tem como objetivo **explorar um conjunto de dados de carros**,
 permitindo analisar:
@@ -31,7 +30,7 @@ permitindo analisar:
 
 ---
 
-### 🧭 Como navegar entre as seções
+###  Como navegar entre as seções
 
 Use o menu no canto superior esquerdo do Streamlit (ícone ☰) para acessar as páginas:
 
@@ -43,7 +42,7 @@ Cada página possui **filtros na barra lateral** (sidebar), que atualizam os gr�
 
 ---
 
-### 🎚️ Como os filtros influenciam os dados
+###  Como os filtros influenciam os dados
 
 - Filtros como **marca, ano, tipo de transmissão, tamanho do veículo e tipo de tração**
   são aplicados diretamente sobre o conjunto de dados.
@@ -55,7 +54,7 @@ Cada página possui **filtros na barra lateral** (sidebar), que atualizam os gr�
 
 ---
 
-### 📂 Prévia do Dataset
+###  Prévia do Dataset
 Abaixo você pode ver algumas linhas do dataset para entender a estrutura dos dados.
 """)
 

@@ -9,7 +9,7 @@ def load_data():
 
 df = load_data()
 
-st.title("⚙️ Consumo e Performance")
+st.title(" Consumo e Performance")
 
 #FILTROS
 st.sidebar.header("Filtros - Consumo & Performance")

@@ -9,7 +9,7 @@ def load_data():
 
 df = load_data()
 
-st.title("📊 Visão Geral dos Dados de Carros")
+st.title(" Visão Geral dos Dados de Carros")
 
 #FILTROS
 st.sidebar.header("Filtros - Visão Geral")
